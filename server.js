@@ -26,12 +26,12 @@ app.use(cors(corsOptions));
 
 
 //--------------------------
-//
-// const posController = require('./controllers/posController');
-//
-// app.use('/api/v1/pos', posController);
+
+const posController = require('./controllers/posController');
+
+app.use('/api/v1/pos', posController);
 
 
-app.listen(process.env.PORT || 9000, () => {
+app.listen(9000, () => {
   console.log('I am working')
 })
